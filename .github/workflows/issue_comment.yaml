@@ -10,7 +10,6 @@ jobs:
     steps:
 
     - name: "dump github context"
-      uses: actions/checkout@v3f
       run: echo '${{toJSON(github.event)}}' | jq
       shell: bash
       
